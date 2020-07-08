@@ -204,7 +204,7 @@ const useStyles = makeStyles((theme) => ({
         <Toolbar>
         
           <Typography className={classes.title} variant="h6" noWrap>
-            Pusher Chat App
+          NOTE APP
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
