@@ -83,7 +83,7 @@ class Signup extends React.Component {
       <Grid item xs={12} md={4} lg={4} > 
     <div>
       <Paper className={classes.loginSection}>
-        <h1>Get Started for Free</h1>
+        <h2>Get Started for Free</h2>
         <form autoComplete={"false"} className={classes.formSection}onSubmit={this.handleSubmit}>
             <TextField
               id="standard-basic"
