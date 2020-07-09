@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router} from 'react-router-dom';
 import { Provider } from "react-redux";
-import { ReactReduxFirebaseProvider, isLoaded } from "react-redux-firebase";
+import { ReactReduxFirebaseProvider } from "react-redux-firebase";
 // import { MuiThemeProvider } from "@material-ui/core/styles";
 // import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 

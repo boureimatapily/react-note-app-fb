@@ -5,7 +5,7 @@ import { TextField, Button, Typography, Grid, Container } from "@material-ui/cor
 import { Link } from "react-router-dom";
 import { authenticateWithGoogle, login} from "../redux/Actions/authActions"
 import { connect } from "react-redux";
-import {toast} from "react-toastify"
+//import {toast} from "react-toastify"
 
 
 // import FacebookIcon from "@material-ui/icons/Facebook";
