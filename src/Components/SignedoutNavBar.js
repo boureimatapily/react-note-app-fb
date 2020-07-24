@@ -14,14 +14,10 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import Button from "@material-ui/core/Button";
 
-//import { Link } from '@material-ui/core';
+
 import { Link } from "react-router-dom";
 import { Grid, Container } from '@material-ui/core';
-import {logout} from "../redux/Actions/authActions"
-import { connect } from 'react-redux';
-// import   firebase  from '../Config/fbconfig';
-// import auth from "../Config/fbconfig"
-// import {toast} from "react-toastify"
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -102,20 +98,7 @@ const useStyles = makeStyles((theme) => ({
  function SignedoutNavBar({logout, history}) {
   const classes = useStyles();
 
-  // const [isAuthenticated, setIsAuthenticated] = useState(null)
-
-  // useLayoutEffect(() => {
-  //   setIsAuthenticated(getAuthenticationStatus())
-  // })
-
-  // const handleLogout = event => {
-  //   event.preventDefault()
-  //   logout()
-  //   toast.success("Logout successful")
-  
-  // }
-
-  // const [spacing, setSpacing] = React.useState(2);
+ 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -170,19 +153,8 @@ const useStyles = makeStyles((theme) => ({
             {" "}
             <Button variant="contained" color="primary" className={classes.navButton}>Home</Button>{" "}
           </Link>
-         
-          <Link to="/login">
-            {" "}
-            <Button variant="contained" color="primary" className={classes.navButton}>Login</Button>{" "}
-          </Link>
-          <Link to="/signup">
-            {" "}
-            <Button variant="contained" color="primary" className={classes.navButton}>Sign up</Button>
-          </Link>
-          
-           
-         
-          
+
+        
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           aria-label="account of current user"
@@ -226,20 +198,8 @@ const useStyles = makeStyles((theme) => ({
             {" "}
             <Button variant="contained" color="primary" className={classes.navButton}>Note</Button>{" "}
           </Link>
-                        
-          <Link to="/login">
-          {" "}
-          <Button variant="contained" color="primary" className={classes.navButton}>Login</Button>{" "}
-          </Link>
 
-          <Link to="/signup">
-          {" "}
-          <Button variant="contained" color="primary" className={classes.navButton}>Sign up</Button>
-          </Link>
-         
-
-         
-           
+                   
           </div>
           <div className={classes.sectionMobile}>
           <IconButton
@@ -261,7 +221,5 @@ const useStyles = makeStyles((theme) => ({
   );
 }
 
-// const mapStateToProps = ({currentUser}) => {
-//   return { currentUser }
-// }
-export default connect(null,{logout})(SignedoutNavBar )
+
+export default SignedoutNavBar 
